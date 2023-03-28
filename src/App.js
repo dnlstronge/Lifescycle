@@ -17,7 +17,9 @@ function App() {
   return (
     <div className="app">
       <h1>Hi there!</h1>
-      <DemoOutput show={false}/> {/* hardcode this to false */}
+      <DemoOutput show={false}/> 
+      {/* hardcode this to false so nothing changes but logs still fire??? 
+      children part of parent function body, ie the parent changed */}
       <Button onClick={handleButton}>Add Paragraph</Button>
     </div>
   );
