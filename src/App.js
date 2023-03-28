@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="app">
       <h1>Hi there!</h1>
-      <DemoOutput show={addPara}/>
+      <DemoOutput show={false}/> {/* hardcode this to false */}
       <Button onClick={handleButton}>Add Paragraph</Button>
     </div>
   );
