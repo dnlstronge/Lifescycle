@@ -53,4 +53,19 @@ here are some examples:
  1 evaluates as the same, where as two identical arrays for example are different (not React specific
   pure JS)
 
+  AND.......functions are just.......objects
+
+  const onclickevent = () => {
+    setSomeValue("x")
+  }
+
+  so... the function is created on 1st pass, 
+
+  next, 
+
+  props.onclickevent === props.previous.onclickevent 
+
+  even though the function object is exactly the same in terms of logic and structure, 
+  when compared they are seen as different, well because they are objects
+
 */
