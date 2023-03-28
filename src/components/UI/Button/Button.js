@@ -68,4 +68,9 @@ here are some examples:
   even though the function object is exactly the same in terms of logic and structure, 
   when compared they are seen as different, well because they are objects
 
+  and FINALLY, becaues of this React.memo() sees them as different, and this explains why
+  memo prevents re-evaluating sometimes. Its important I think to understand this , hence the 
+  length comments. 
+  
+
 */
