@@ -6,6 +6,7 @@ import Button from "./components/UI/Button/Button";
 
 // styles
 import "./App.css";
+import DemoOutput from "./components/Demo/DemoOutput";
 
 function App() {
   console.log("app running"); // logs each time the button is clicked because state has changed and function reexecuted
@@ -16,9 +17,7 @@ function App() {
   return (
     <div className="app">
       <h1>Hi there!</h1>
-      {addPara && (
-        <p>Added Paragraph to demonstrate how react and dom updating works</p>
-      )}
+      <DemoOutput addPara={addPara}/>
       <Button onClick={handleButton}>Add Paragraph</Button>
     </div>
   );
