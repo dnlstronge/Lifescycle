@@ -11,7 +11,7 @@ import './App.css';
 function App() {
   const [addPara, setAddPara] = useState(false)
   const handleButton = () => {
-    setAddPara(addPara ? false : true)
+    setAddPara(prev => !prev) // short version setting to opposite of previous state
   }
   return (
     <div className="app">
