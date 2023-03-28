@@ -32,5 +32,25 @@ this is also true for false being passed to demoOutput, it's seen as a new value
 so in the simplest terms because the App function is re-executed, any values within are recreated, 
 even though they are essentially the same, huh.....!?
 
-e.g false in rendercycle one ===> false(new) in render cycle two, so the are the same logically but
-practically they are different*/
+e.g false in rendercycle one ===> false(new) in render cycle two, so they are the same logically but
+in practical terms totally different.
+
+So why does it appear to prevent re-evaluation for some cases and not for others
+This has to do with value types,
+
+here are some examples: 
+
+1) - (primitive ref values)
+
+ 123 === 123 ==EVALS TO==> true
+ "hi" === "hi" ==EVALS TO==> true
+
+2) - (non-primitive - arrays objects etc)
+
+ [1, 2, 3] === [1, 2, 3] ==EVALS TO==> false
+ {1:one, 2:two} === {1:one, 2:two} ==EVALS TO==> false
+
+ 1 evaluates as the same, where as two identical arrays for example are different (not React specific
+  pure JS)
+
+*/
