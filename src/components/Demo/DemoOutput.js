@@ -5,7 +5,10 @@ import React from "react";
 
 
 const DemoOutput = (props) => {
+
+    console.log("the props have changed so I fire")
     return (
+        
         <p>{props.show ? "The text to display goes here" : ""}</p>
     )
 };
