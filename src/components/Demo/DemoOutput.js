@@ -17,4 +17,10 @@ what does memo do you say.....?
 Tells react to look at the props a component gets, 
 check the new value those props got and compare
 it to the previous value those props got, 
-if the value of the prop has changed it tells it to re-evaluate it*/
+if the value of the prop has changed it tells it to re-evaluate it, 
+if it hasn't changed then component EXECUTION can be skipped
+
+to show this: the log in NewParagraph "child running" should no longer 
+show in console
+
+*/
