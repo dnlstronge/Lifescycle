@@ -10,4 +10,11 @@ const DemoOutput = (props) => {
 
 export default React.memo(DemoOutput);
 
-/* demo react memo */
+/* demo react memo, doesn't work for class based componenets though 
+
+what does memo do you say.....? 
+
+Tells react to look at the props a component gets, 
+check the new value those props got and compare
+it to the previous value those props got, 
+if the value of the prop has changed it tells it to re-evaluate it*/
