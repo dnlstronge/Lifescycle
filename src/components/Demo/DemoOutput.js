@@ -23,4 +23,6 @@ if it hasn't changed then component EXECUTION can be skipped
 to show this: the log in NewParagraph "child running" should no longer 
 show in console
 
+
+this is a simple example of optimisation => avoids unneccessary re-rendering
 */
