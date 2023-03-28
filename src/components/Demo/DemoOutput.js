@@ -25,4 +25,8 @@ show in console
 
 
 this is a simple example of optimisation => avoids unneccessary re-rendering
+meo has a cost itself, so it's a case of whether it is worth it or not on a component 
+case by case basis
+
+so it's cost of re-evaluating vs cost of comparing props
 */
