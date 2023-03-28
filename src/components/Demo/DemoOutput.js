@@ -1,12 +1,12 @@
 import React from "react";
 
+
+/* Render text conditionally this time */
+
+
 const DemoOutput = (props) => {
     return (
-        <>
-        {props.addPara && (
-            <p>Added Paragraph to demonstrate how react and dom updating works</p>
-          )}
-          </>
+        <p>{props.show ? "The text to display goes here" : ""}</p>
     )
 };
 

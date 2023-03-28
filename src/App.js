@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="app">
       <h1>Hi there!</h1>
-      <DemoOutput addPara={addPara}/>
+      <DemoOutput show={addPara}/>
       <Button onClick={handleButton}>Add Paragraph</Button>
     </div>
   );
