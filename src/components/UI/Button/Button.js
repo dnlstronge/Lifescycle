@@ -25,4 +25,12 @@ This is a common GOTCHA with react
 
 it's still called by react and so executes like a normal function (the handler 
   essentially is recreated each time, it is therefore "new", and therefore there is a 
-  change happening, tangible or not*/
+  change happening, tangible or not
+  
+this is also true for false being passed to demoOutput, it's seen as a new value
+
+so in the simplest terms because the App function is re-executed, any values within are recreated, 
+even though they are essentially the same, huh.....!?
+
+e.g false in rendercycle one ===> false(new) in render cycle two, so the are the same logically but
+practically they are different*/
