@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-
+import Button from "./components/UI/Button/Button"
 
 /* [1] - Create a button which adds a paragraph below the h1 tag */
 
@@ -18,7 +18,7 @@ function App() {
       <h1>Hi there!</h1>
       {addPara && 
       <p>Added Paragraph to demonstrate how react and dom updating works</p>}
-      <button onClick={handleButton}>Add Paragraph</button>
+      <Button onClick={handleButton}>Add Paragraph</Button>
     </div>
     
   );
