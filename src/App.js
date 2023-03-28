@@ -9,17 +9,16 @@ import "./App.css";
 import DemoOutput from "./components/Demo/DemoOutput";
 
 function App() {
-  console.log("app running"); // logs each time the button is clicked because state has changed and function reexecuted
+  console.log("app running"); 
   const [addPara, setAddPara] = useState(false);
   const handleButton = () => {
-    setAddPara((prev) => !prev); // short version setting to opposite of previous state
+    setAddPara((prev) => !prev);
   };
   return (
     <div className="app">
       <h1>Hi there!</h1>
       <DemoOutput show={false}/> 
-      {/* hardcode this to false so nothing changes but logs still fire??? 
-      children part of parent function body, ie the parent changed */}
+  
       <Button onClick={handleButton}>Add Paragraph</Button>
     </div>
   );
