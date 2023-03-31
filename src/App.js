@@ -14,11 +14,14 @@ function App() {
   const [addPara, setAddPara] = useState(false);
   const [toggleActive, setToggleActive] = useState(false)
   const handleAllow = () => {
-    setToggleActive(prev => !prev) 
+    setToggleActive((prev) => !prev) 
   }
   const handleButton = useCallback(() => {
-    setAddPara((prev) => !prev);
-  }, []) // tells react it has no deps so will never change so samefunction object reused when app rerenders
+    if(toggleActive) {
+    setAddPara((prev) => !prev)}
+  }, [toggleActive])
+  
+  // tells react it has no deps so will never change so samefunction object reused when app rerenders
   return (
     <div className="app">
       <h1>Hi there!</h1>
