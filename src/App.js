@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 import Button from "./components/UI/Button/Button";
 
 /* [1] - Create a button which adds a paragraph below the h1 tag 
@@ -10,10 +10,12 @@ import DemoOutput from "./components/Demo/DemoOutput";
 
 function App() {
   console.log("app running"); 
+
   const [addPara, setAddPara] = useState(false);
-  const handleButton = () => {
+
+  const handleButton = useCallback(() => {
     setAddPara((prev) => !prev);
-  };
+  })
   return (
     <div className="app">
       <h1>Hi there!</h1>
