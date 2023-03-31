@@ -15,7 +15,7 @@ function App() {
 
   const handleButton = useCallback(() => {
     setAddPara((prev) => !prev);
-  })
+  }, []) // tellsreact it has no deps so will never change
   return (
     <div className="app">
       <h1>Hi there!</h1>
