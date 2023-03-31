@@ -34,3 +34,7 @@ function App() {
 }
 
 export default App;
+
+
+
+// when a JS function is rendered, the variables used are closed = closure
